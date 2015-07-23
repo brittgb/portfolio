@@ -15,12 +15,11 @@
 							</div> <!-- end of "copywrite" div -->
 
 							<ul>
-								<li><a href="about.php" >About Me</a></li>
-								<li><a href="skillsoverview.php">Skills Overview</a></li>
-								<li><a href="resume.php">Resume</a></li>
+								<li><a href="index.php" >Home</a></li>
 								<li><a href="worksamples.php">Work Samples</a></li>
 								<li><a href="contact.php">Contact</a></li>
 							</ul>
+
 
 					</section> <!-- end of "bottom_nav" section -->
 				</section> <!-- end of "main_content" section -->
@@ -30,7 +29,7 @@
 			<div class="push"></div>
 		</div> <!-- end of "wrapper" div -->
 		<footer>
-			<!-- <img src="images/footer.gif" width="100%" alt="footer texture"> -->
+
 		</footer>
 		</div>
 	</body>

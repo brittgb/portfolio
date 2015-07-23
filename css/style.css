@@ -18,6 +18,19 @@
 			font-family: "EB Garamond";
 			text-align: center;
 			padding: 1%;
+			 text-shadow:
+			    1.5px 1.5px 0 #000,
+			    /* Simulated effect for Firefox and Opera
+			       and nice enhancement for WebKit */
+			   -1px -1px 0 #000,  
+			    1px -1px 0 #000,
+			   -1px  1px 0 #000,
+			    1px  1px 0 #000;
+		}
+
+		.logo {
+			display: inline-block;
+			width: 120px;
 		}
 
 		.name {
@@ -25,6 +38,8 @@
 			display: inline-block;
 			vertical-align: 65%;
 		}
+
+	/*** general styling ***/
 
 		a:link {
 			text-decoration: none;
@@ -58,8 +73,13 @@
 			-moz-opacity: 0.60;
 		}
 
+		.top_nav {
+			padding: 10px 0;
+		}
+
 		.bottom_nav ul li {
 			float: right;
+			padding-right: 20px;
 		}
 
 		.copywrite {
@@ -73,13 +93,17 @@
 
 		nav, nav a, .bottom_nav, .bottom_nav a {
 			color: #f2e2d2;
-			font-family: 'Bad Script', sans-serif;
+			font-family: 'Oxygen', serif;
 			text-decoration: none;
 			text-align: center;
 		}
 		
-		.bottom_nav a {
-			padding: 0 10px;
+		.bottom_nav {
+			padding-top: 15px;
+		}
+
+		.bottom_nav div {
+			padding: 0 0 0 20px;
 		}
 
 		nav a:hover, .bottom_nav a:hover {
@@ -93,25 +117,70 @@
 		}
 
 		.nav_wrapper {
-			min-height: 100%;
+			min-height: 80%;
 			height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
 			height: 100%;
-			margin: 0 auto -40px; /* the bottom margin is the negative value of the footer's height */
+			margin: 0 auto -55px; /* the bottom margin is the negative value of the footer's height */
 		}
 
 
 	/*** main page styles ***/
 
+				/*** home page only ***/
+					#headshot {
+						display: inline-block;
+						float: right;
+						margin: 40px 20px 20px 30px;
+						border: 2px solid black;
+					}
+
+					#greeting {
+						font-size: 3em;
+						margin-top: 30px;
+					}
+
+					#tagline {
+						text-align: right; 
+						font-size: 2em;
+					}
+
+					.text_emphasis {
+						font-family: 'EB Garamond';
+						font-size: 1.5em;
+						color: #dbab84;
+					}
+
+					.text_emphasis, .main_content ul li {
+						text-shadow:
+						    3px 3px 0 #000,
+						    /* Simulated effect for Firefox and Opera
+						       and nice enhancement for WebKit */
+						   -1px -1px 0 #000,  
+						    1px -1px 0 #000,
+						   -1px  1px 0 #000,
+						    1px  1px 0 #000;
+					}
+
+		
+				/*** end home page only ***/
+
+		.contact_text {
+						margin: 35% 0 30%; 
+						text-align: center; font-size: 3em;
+					}	
+
+		.main_content ul li {
+			list-style-type: none;
+			color: #ffffff;
+			font-size: 1.5em;
+			margin-bottom: 10px;
+		}	
+
 		.main_background {
-			height: 100%;
-			min-height: 850px;
-			background-image: url(../images/mountaintop_background.jpg);
+			background-image: url(../images/WaterBackground2700.jpg);
 			/* resize image to fit the whole page - does not harm dimension ratios */
 				background-repeat: no-repeat;
 				background-position: center;
-				-webkit-background-size: cover; 
-				-moz-background-size: cover;
-				-o-background-size: cover;
 				background-size: cover;
 		}
 
@@ -123,67 +192,64 @@
 			}
 
 			.main_content .background {
-				margin: 1% 10%;
-				width: 80%;
+				margin: 0 12% 10% 12%;
+				width: 76%;
 				height: 90%;
 				position: absolute;
 				z-index: 1; /* position the background behind the text */
 				background: black;
-				border: 2px solid white;
 				/* create semi-transparant background */
-					filter: alpha(opacity=80);
-					filter: progid:DXImageTransform.Microsoft.Alpha(opacity=80);
-					opacity: 0.80;
-					-moz-opacity: 0.80;
-				/* rounded corners */
+					filter: alpha(opacity=70);
+					filter: progid:DXImageTransform.Microsoft.Alpha(opacity=70);
+					opacity: 0.70;
+					-moz-opacity: 0.70;
+				/* rounded corners 
 					-webkit-border-radius: 20px;
 					-moz-border-radius: 20px;
-					border-radius: 20px;
+					border-radius: 20px; */
 			}
 
 			.main_content .text {
-				margin: 10% auto 10% auto;
+				margin: 10% auto 20% auto;
 				padding: 1em;
 				width: 70%;
-				height: 80%;
+				height: 70%;
 				position: relative;
 				z-index: 5;
-				color: #C4B7AA;
-				font-size: 1.2em;
-				font-family: 'EB Garamond', sans-serif;
+				color: #fcf6e6;	/* #C4B7AA; */
+				font-family: 'Lora', sans-serif;
+				text-shadow:
+				    1px 1px 0 #000,
+				    /* Simulated effect for Firefox and Opera
+				       and nice enhancement for WebKit */
+				   -1px -1px 0 #000,  
+				    1px -1px 0 #000,
+				   -1px  1px 0 #000,
+				    1px  1px 0 #000;
 			}
 
 		h2, h3 {
-			color: #f19d63;
+			color: #dbab84;
 			font-family: 'EB Garamond', sans-serif;
-	
+			text-shadow:
+			    1.5px 1.5px 0 #000,
+			    /* Simulated effect for Firefox and Opera
+			       and nice enhancement for WebKit */
+			   -1px -1px 0 #000,  
+			    1px -1px 0 #000,
+			   -1px  1px 0 #000,
+			    1px  1px 0 #000;
 		}
 
-		/** resume page styles **/
-
-		.downloads {
-			display: block;
-			width: 200px;
-			padding: 10px;
-			text-align: center;
-			background-color: lightgrey;
-				/* rounded corners */
-					-webkit-border-radius: 5px;
-					-moz-border-radius: 5px;
-					border-radius: 5px;
-		}
-
-		.downloads a {
-			color: black;
-			font-size: 1em
+		p {
+			font-size: 1.2em;
 		}
 
 		/** work samples page styles **/
 
-		.work_sample a {
+		.work_sample img {
 			float: right;
 			margin-left: 3%;
-			margin-top: 1%;
 		}
 
 		.work_sample {
@@ -195,79 +261,43 @@
 
 	/*** footer styles ***/
 		footer, .push {
-			height: 100px;
+			height: 130px;
 		}
 
 		.wrapper {
 			min-height: 100%;
 			height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
 			height: 100%;
-			margin: 0 auto -100px; /* the bottom margin is the negative value of the footer's height */
+			margin: 0 auto -130px; /* the bottom margin is the negative value of the footer's height */
 		}
 
 
 /*** RESPONSIVE BREAK POINTS AND STYLES ***/
 	
 	/* WIDESCREEN DESKTOPS Layout and Sizing */
-		@media all and (min-width:1900px) {
-			footer, .push {
-				height: 200px;
-			}
-
-			.wrapper {
-				min-height: 100%;
-				height: auto !important; /* This line and the next line are not necessary unless you need IE6 support */
-				height: 100%;
-				margin: 0 auto -200px; /* the bottom margin is the negative value of the footer's height */
-			}
-
-			.main_content {
-				width: 70%;
-				margin: auto;
-			}
-
-			.main_background {
-				min-height: 1200px;
-			}
-		}
-
-
-		@media all and (min-width:1440px) and (max-width: 1899px) {
-
-			.name {
-				font-size: 2.5em;
-			}
+		@media all and (min-width:1440px) and (max-width: 2199px) {
 
 			nav {
-				font-size: 1.5em;
+				font-size: 1.6em;
 			}
 
 			nav a {
 				padding: 0 30px;
 			}
 
-			.main_content {
-				width: 80%;
-				margin: auto;
-			}
-
-			h2 {
-				font-size: 2.5em;
-			}
-
 			.bottom_nav {
-				font-size: 1.6em;
-			}
-
-			.main_background {
-				min-height: 1000px;
+				font-size: 1.4em;
 			}
 
 		}
 
 
 	/* DESKTOP Layout and Sizing */
-		@media all and (min-width:841px) {
+		@media all and (min-width:1024px) {
+
+			h2 {
+				font-size: 3em;
+			}
 
 			.name {
 				font-size: 2.5em;
@@ -281,8 +311,8 @@
 				padding: 0 20px;
 			}
 
-			h2 {
-				font-size: 2.5em;
+			#strengths_list {
+				float: right;
 			}
 
 			.bottom_nav {
@@ -293,14 +323,15 @@
 		
 
 	/* TABLET Layout and Sizing */ 
-		@media all and (min-width:531px) and (max-width:840px) {
+		@media all and (min-width:531px) and (max-width:1024px) {
 			.name {
 				font-size: 1.8em;
 				padding: 10px;
+				vertical-align: 40%;
 			}
 
 			.logo {
-				display: none;
+				width: 75px;
 			}
 
 			nav {
@@ -315,19 +346,39 @@
 				font-size: 1.8em;
 			}
 
+			#greeting {
+				font-size: 2.4em;
+			}
+
+			#tagline {
+				font-size: 1.8em;
+				text-align: left;
+			}
+
+			.contact_text {
+				margin: 35% 0 100%; 
+				text-align: center; font-size: 1.5em;
+			}
+
+			.main_content .background {
+				height: 95%;
+			}
+
+			#strengths_list {
+				float: left;
+			}
+
 			.bottom_nav a {
 				font-size: .7em;
 				padding: 0 3px;
 			}
 
-			.main_content .background {
-				height: 100%
-			}
 
 			.main_background {
-				background-image: url(../images/mountaintop_background.jpg);
-				height: 100%;
-				min-height: 1400px;
+				-webkit-background-size: cover; 
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
 			}
 
 		} 
@@ -336,40 +387,78 @@
 	/* PHONE Layout and Sizing */ 
 		@media all and (max-width:530px) {
 			.name {
-				font-size: 1.3em;
+				font-size: 1em;
 				padding: 5px;
+				vertical-align: 60%;
 			}
 
 			.logo {
-				display: none;
+				width: 50px;
+			}
+
+			nav {
+				font-size: .9em;
+			}
+
+			nav a {
+				padding: 0 8%;
+			}
+
+			#greeting {
+				font-size: 1.8em;
+			}
+
+			#tagline {
+				font-size: 1.3em;
+				text-align: left;
 			}
 
 			h2 {
-				font-size: 1.6em;
+				font-size: 1.5em;
+			}
+
+			p {
+				font-size: 1em;
+			}
+
+			.text_emphasis {
+				font-size: 1.2em;
+			}
+
+			.contact_text {
+				margin: 35% 0 100%; 
+				text-align: center; font-size: 1em;
 			}
 
 			.main_background {
-				background-image: url(../images/mountaintop_background.jpg);
-				height: 100%;
-				min-height: 1500px;
+				-webkit-background-size: cover; 
+				-moz-background-size: cover;
+				-o-background-size: cover;
+				background-size: cover;
 			}
+			
 
 			.main_content .background {
-				height: 100%;
+				height: 97%;
 			}
 
 			.main_content .text {
 				font-size: 1em;
-				padding-left: 10%;
+				padding-left: 5%;
+				padding-right: 5%;
 			}
 
-			.bottom_nav {
-				display: none;
+			.main_content ul li {
+				font-size: 1.1em;
 			}
 
-			.resume {
-				display: none;
+			.bottom_nav a {
+				font-size: .6em;
 			}
 
-						
+			.bottom_nav ul li {
+			float: right;
+			padding-right: 6px;
+		}
+		
 		}
